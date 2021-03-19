@@ -1,0 +1,165 @@
+
+.modal {
+    /* outline: none; */
+    color: black;
+    background-color: white;
+    margin: auto;
+    margin-top: 30vh;
+    height: 300px;
+    width: 500px;
+    opacity: 1;
+    position: relative;
+    border: 2px solid black;
+  }
+  
+  .modal-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 270px;
+  }
+  
+  .modal-heading {
+    color: black;
+    font-size: 20px;
+    /* position: absolute; */
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .modal-close-btn {
+    color: black;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .modal-desc {
+    text-align: center;
+  }
+  
+  .modal-close-btn:hover {
+    cursor: pointer;
+  }
+  
+  .modal-btn {
+    background-color: #10495c;
+    color: white;
+    padding: 12px 25px;
+  }
+
+  /*  */
+  .getBook-modal {
+    color: black;
+    background-color: white;
+    margin: auto;
+    margin-top: 20vh;
+    height: 500px;
+    width: 500px;
+    opacity: 1;
+    position: relative;
+    border: 2px solid black;
+}
+
+.getBook-modal-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.getBook-modal-heading {
+    font-size: 25px;
+    margin: 10px;
+    margin-top: 35px;
+}
+
+.getBook-modal form {
+  width: 100%;
+}
+
+.getBook-modal .group {
+  position: relative;
+  margin: 40px 0;
+}
+
+.getBook-modal input {
+  background: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 320px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+.getBook-modal input:focus {
+  outline: none;
+}
+
+.getBook-modal input:focus ~ label, input:valid ~ label{
+  top: -14px;
+  font-size: 12px;
+  color: #10495c;
+}
+
+.getBook-modal input:focus ~ .bar:before{
+  width: 320px;
+}
+
+.getBook-modal label {
+  color: #c0bdbd;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+}
+
+.getBook-modal .bar {
+  position: relative;
+  display: block;
+  width: 320px;
+}
+.getBook-modal .bar:before {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: #10495c;
+  transition: 300ms ease all;
+  left: 0%;
+}
+
+.getBook-modal .btn {
+  background: #10495c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.getBook-modal .btn:hover {
+  color: #8b8b8b;
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
+}
+.getBook-modal .btn.btn-submit {
+  background: #10495c;
+  color: #fff;
+}
+.getBook-modal .btn.btn-submit:hover {
+    cursor: pointer;
+  background: #10495c;
+  color: #f2ad5f;
+}

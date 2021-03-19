@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+.chatlist {
+    padding: 0 10px 20px 20px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.chatlist a {
+    text-decoration: none;
+}
+
+.chatlist-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chatlist-heading {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+
+.chatlist-search input{
+    margin: 30px auto;
+    width: 350px;
+    padding: 10px 30px;
+    outline: none;
+    border-radius: 20px;
+}

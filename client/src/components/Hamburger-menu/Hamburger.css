@@ -1,0 +1,113 @@
+
+.p-menu1 a {
+    color: #FFFFFF80;
+    text-decoration: none;
+  }
+
+  .hamburger-option {
+    color: #FFFFFF80;
+
+  }
+  
+  .p-menu1{
+     height: 100%;
+  }
+    
+  /* Hamburger */
+  .hamburger1 {
+    height: 30px;
+    padding: 20px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: flex-end;
+    z-index: 120;
+  }
+  
+  .hamburger1 div {
+    background-color: rgb(61, 61, 61);
+    position: relative;
+    width: 30px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+  .hamburger1 .top-transition {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin-top: 22.5px;
+  }
+
+  .hamburger1 .meat-transition {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: -5px;
+  }
+
+  .hamburger1 .bottom-transition {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  .p-menu1 .menu1-transition-open {
+    height: 300px; 
+    display: block;
+  }
+
+  .p-menu1 .menu1-transition-close {
+    height: 0;
+    display: none;
+  }
+  
+  /* Menu */
+  #nav-options {
+    display: block;
+    width: 100%;
+    background-color: #2C2C2C;
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: 1fr repeat(3, 0.5fr);
+    grid-row-gap: 10px;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    width: 250px;
+    text-align: center;
+    overflow: hidden;
+    /* display: none; */
+    transition: height .4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 10vw;
+    top: 15vh;
+}
+  
+  #nav-options a:first-child {
+    margin-top: 20px;
+  }
+  
+  #nav-options a:last-child {
+    margin-bottom: 20px;
+  }
+  
+  .hamburger-option {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    font:16px; 
+    cursor: pointer;
+  }
+  
+  .hamburger-option:hover {
+    /* background-color: #fff; */
+    color:#FFC300;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  

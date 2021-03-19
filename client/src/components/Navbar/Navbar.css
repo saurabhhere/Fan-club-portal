@@ -1,0 +1,37 @@
+.navbar {
+    color: #FFC300;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+}
+
+.navbar-options-flex {
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.navbar-option {
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.logo img {
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px
+}
+
+.FCP {
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FFC300;
+}

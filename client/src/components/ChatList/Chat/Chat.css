@@ -1,0 +1,22 @@
+.chatlist-chat {
+    background-color: #fafafa;
+    color: #333333;
+    border: 1px solid #e6e6e6 ;
+    padding: 10px 25px;
+    width: 70vw;
+    height: 70px;
+    margin: 20px auto;
+}
+
+.chatlist-chat:hover {
+    background-color: #fff  ;
+}
+
+.chat-name {
+    font-weight: 600;
+}
+
+.chat-membercount {
+    font-size: 12px;
+}
+

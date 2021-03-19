@@ -1,0 +1,23 @@
+.account-activate {
+    display: flex;
+    height: 90vh;
+}
+
+.account-activate-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.activate-btn {
+    cursor: pointer;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFC300;
+    padding: 10px;
+}
+
+.activate-btn:active {
+    transform: scale(0.95);
+}
