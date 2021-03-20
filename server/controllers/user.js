@@ -63,7 +63,7 @@ exports.register = async (req, res) => {
         `
 
         let mailOptions = {
-            from: '"Fan Club Portal" <saurabhguptajpr@yahoo.in>',
+            from: '"Fan Club Portal" <no-reply@fanclubportal.com>',
             to: registerEmail,
             subject: "Account Activation",
             html: mail

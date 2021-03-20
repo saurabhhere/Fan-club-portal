@@ -23,10 +23,8 @@ const UserProfile = () => {
     const history = useHistory();
 
     useEffect(() => {
-        const source = axios.CancelToken.source();
-
         if (userData.user){
-            axios.get(`${url.serverURL}/user/profile/${userId}`, { cancelToken: source.token })
+            axios.get(`${url.serverURL}/user/profile/${userId}`)
             .then((res) => {
                 setUser(res.data);
                 if (res.data.ProfileUpdated){
@@ -41,9 +39,6 @@ const UserProfile = () => {
             })
 
         }
-        return () => {
-            source.cancel();
-          };
     }, [userData, userId])
 
     const submit = async (e) => {
@@ -146,10 +141,10 @@ const UserProfile = () => {
                     <div className="profile-adjacent-flex">
                             Chatrooms Joined:
                         {user ? (user.chatrooms.map((chatroom, i) => (
-                                <div key={i}>{chatroom.name} |</div>
+                                <div key={i}>|{chatroom.name}| </div>
                             ))) : ('No Chatrooms Joined')}
                     </div>
-                    <div className="profile-adjacent-flex">
+                    <div className="profile-adjacent-flex update-profile-btn">
                     {userData.user.id == userId ? (<input type="submit" value="Update Profile"/>) : ('')}
                     </div>
                 </div>

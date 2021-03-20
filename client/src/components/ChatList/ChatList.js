@@ -17,23 +17,17 @@ const ChatList = () => {
     const history = useHistory();
 
     useEffect(() => {
-        const source = axios.CancelToken.source();
-
         if (userData.user) {
-            axios.get(`${url.serverURL}/user/profile/${userData.user.id}`, { cancelToken: source.token })
+            axios.get(`${url.serverURL}/user/profile/${userData.user.id}`)
                 .then((res) => {
                     if (!res.data.ProfileUpdated) {
-                        history.push('/user/profile')
+                        history.push(`/user/profile/${userData.user.id}`)
                     }
                     setUser(res.data);
                 }).catch((err) => {
                     console.log(err);
                 })
         }
-
-        return function cleanup (){
-            source.cancel();
-        } 
     }, [userData])
 
     return (

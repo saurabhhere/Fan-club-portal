@@ -8,9 +8,8 @@ const Chat = ({searchRoom, userData}) => {
     const [rooms, setRooms] = useState([]);
 
     useEffect(() => {
-        const source = axios.CancelToken.source();
 
-        axios.get(`${url.serverURL}/user/profile/${userData.user.id}`,{ cancelToken: source.token })
+        axios.get(`${url.serverURL}/user/profile/${userData.user.id}`)
         .then((res) => {
             setRooms(res.data.chatrooms.filter((chatroom) => {
                 if (chatroom.name.toLowerCase().includes(searchRoom.toLowerCase())){
@@ -21,9 +20,6 @@ const Chat = ({searchRoom, userData}) => {
         .catch((error) => {
             console.log(error);
         })
-        return () => {
-            source.cancel();
-          };
     }, [userData.user, searchRoom])
 
     return (
