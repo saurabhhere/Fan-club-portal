@@ -78,7 +78,7 @@ Add .env file in server folder containing:
 PORT = 5000
 CONNECTION_URL = your_mongo_connection_string
 JWT_SECRET = your_secret_string
-EMAIL= your_email
+EMAIL= your_yahoo_email
 PASSWORD= your_email_password
 CLIENT_URL=http://localhost:3000
 ```
@@ -97,7 +97,7 @@ module.exports = {
     }
 }
 ```
-
+Specially developed for IMG, IIT ROORKEE :heart:
 
 
 
